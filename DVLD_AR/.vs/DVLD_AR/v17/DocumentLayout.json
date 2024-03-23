@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|d:\\programing\\c#\\dvld_ar\\dvld_ar\\applications\\manage_application_types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:applications\\manage_application_types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}|..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\programing\\c#\\dvld_fiinal_version\\dvld project final\\project\\dvld_dataaccess\\applicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46A8427B-DCFC-4DAF-A14C-E3F4789A993D}|..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_Buisness\\DVLD_Buisness.csproj|d:\\programing\\c#\\dvld_fiinal_version\\dvld project final\\project\\dvld_buisness\\clsapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|d:\\programing\\c#\\dvld_ar\\dvld_ar\\applications\\manage_application_types\\frmallapplicationtypeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:applications\\manage_application_types\\frmallapplicationtypeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\applications\\manage_application_types\\frmallapplicationtypeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:applications\\manage_application_types\\frmallapplicationtypeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|d:\\programing\\c#\\dvld_ar\\dvld_ar\\applications\\manage_application_types\\frmeditapplicationtype.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:applications\\manage_application_types\\frmeditapplicationtype.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|d:\\programing\\c#\\dvld_ar\\dvld_ar\\applications\\manage_application_types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:applications\\manage_application_types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\users\\frmchangeuserpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:users\\frmchangeuserpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\users\\frmchangeuserpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:users\\frmchangeuserpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\generalclasses\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265299E-D936-465B-9394-4A91B22228C3}|DVLD_AR.csproj|solutionrelative:generalclasses\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmEditApplicationType.Designer.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.Designer.cs",
+              "RelativeDocumentMoniker": "Applications\\Manage_Application_Types\\frmEditApplicationType.Designer.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.Designer.cs",
+              "RelativeToolTip": "Applications\\Manage_Application_Types\\frmEditApplicationType.Designer.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAEwH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T16:01:14.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmEditApplicationType.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "RelativeDocumentMoniker": "Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "RelativeToolTip": "Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T15:59:55.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmEditApplicationType.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "RelativeDocumentMoniker": "Applications\\Manage_Application_Types\\frmEditApplicationType.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmEditApplicationType.cs [Design]",
+              "RelativeToolTip": "Applications\\Manage_Application_Types\\frmEditApplicationType.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T15:43:40.568Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsApplicationType.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_Buisness\\clsApplicationType.cs",
+              "RelativeDocumentMoniker": "..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_Buisness\\clsApplicationType.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_Buisness\\clsApplicationType.cs",
+              "RelativeToolTip": "..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_Buisness\\clsApplicationType.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T15:39:49.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationType.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_DataAccess\\ApplicationType.cs",
+              "RelativeDocumentMoniker": "..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_DataAccess\\ApplicationType.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_DataAccess\\ApplicationType.cs",
+              "RelativeToolTip": "..\\..\\DVLD_Fiinal_Version\\DVLD Project Final\\Project\\DVLD_DataAccess\\ApplicationType.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T14:57:28.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmAllApplicationTypesList.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "RelativeDocumentMoniker": "Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "RelativeToolTip": "Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAEwCUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T14:54:20.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmAllApplicationTypesList.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "RelativeDocumentMoniker": "Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs [Design]",
+              "RelativeToolTip": "Applications\\Manage_Application_Types\\frmAllApplicationTypesList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T14:48:00.136Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmChangeUserPassword.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Users\\frmChangeUserPassword.cs",
+              "RelativeDocumentMoniker": "Users\\frmChangeUserPassword.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Users\\frmChangeUserPassword.cs",
+              "RelativeToolTip": "Users\\frmChangeUserPassword.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAEwFcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T05:32:26.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmChangeUserPassword.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Users\\frmChangeUserPassword.cs",
+              "RelativeDocumentMoniker": "Users\\frmChangeUserPassword.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Users\\frmChangeUserPassword.cs [Design]",
+              "RelativeToolTip": "Users\\frmChangeUserPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T05:32:24.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "clsGlobal.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\GeneralClasses\\clsGlobal.cs",
+              "RelativeDocumentMoniker": "GeneralClasses\\clsGlobal.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\GeneralClasses\\clsGlobal.cs",
+              "RelativeToolTip": "GeneralClasses\\clsGlobal.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAB8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T02:23:15.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:23:11.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:22:00.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Login\\frmLogin.cs",
+              "RelativeToolTip": "Login\\frmLogin.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAA7wD8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:21:07.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_AR\\DVLD_AR\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:21:05.413Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

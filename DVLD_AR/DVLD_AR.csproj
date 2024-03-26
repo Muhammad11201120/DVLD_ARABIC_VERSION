@@ -64,6 +64,18 @@
     <Compile Include="Applications\LocalDrivingLicenseApplications\frmAddEditLocaLDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmAddEditLocaLDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmAllLocalDrivingApplicationsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmAllLocalDrivingApplicationsList.Designer.cs">
+      <DependentUpon>frmAllLocalDrivingApplicationsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmLocalDrivingLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmLocalDrivingLicenseInfo.Designer.cs">
+      <DependentUpon>frmLocalDrivingLicenseInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Manage_Application_Types\frmAllApplicationTypesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmAddEditLocaLDrivingLicenseApplication.resx">
       <DependentUpon>frmAddEditLocaLDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmAllLocalDrivingApplicationsList.resx">
+      <DependentUpon>frmAllLocalDrivingApplicationsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmLocalDrivingLicenseInfo.resx">
+      <DependentUpon>frmLocalDrivingLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Manage_Application_Types\frmAllApplicationTypesList.resx">
       <DependentUpon>frmAllApplicationTypesList.cs</DependentUpon>

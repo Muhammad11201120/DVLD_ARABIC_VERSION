@@ -344,11 +344,11 @@
             // llPersonInfo
             // 
             this.llPersonInfo.AutoSize = true;
-            this.llPersonInfo.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llPersonInfo.Font = new System.Drawing.Font("Rubik", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llPersonInfo.LinkColor = System.Drawing.Color.Lime;
             this.llPersonInfo.Location = new System.Drawing.Point(6, 274);
             this.llPersonInfo.Name = "llPersonInfo";
-            this.llPersonInfo.Size = new System.Drawing.Size(172, 24);
+            this.llPersonInfo.Size = new System.Drawing.Size(177, 24);
             this.llPersonInfo.TabIndex = 4;
             this.llPersonInfo.TabStop = true;
             this.llPersonInfo.Text = "معلومات صاحب الرخصة";

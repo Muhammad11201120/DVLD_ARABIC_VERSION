@@ -32,15 +32,15 @@
             this.lblPassedTests = new System.Windows.Forms.Label();
             this.lblLicenseClass = new System.Windows.Forms.Label();
             this.lblLocalApplicationID = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.llLicenseInfo = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ctrApplicationBiscInfo1 = new DVLD_AR.Applications.Controls.ctrApplicationBiscInfo();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -98,6 +98,54 @@
             this.lblLocalApplicationID.TabIndex = 22;
             this.lblLocalApplicationID.Text = "؟؟؟";
             // 
+            // llLicenseInfo
+            // 
+            this.llLicenseInfo.AutoSize = true;
+            this.llLicenseInfo.Font = new System.Drawing.Font("Rubik", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llLicenseInfo.LinkColor = System.Drawing.Color.Lime;
+            this.llLicenseInfo.Location = new System.Drawing.Point(6, 193);
+            this.llLicenseInfo.Name = "llLicenseInfo";
+            this.llLicenseInfo.Size = new System.Drawing.Size(128, 24);
+            this.llLicenseInfo.TabIndex = 3;
+            this.llLicenseInfo.TabStop = true;
+            this.llLicenseInfo.Text = "معلومات الرخصة";
+            this.llLicenseInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llLicenseInfo_LinkClicked);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1059, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(183, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "نوع الرخصة المقدٌم عليها : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(454, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "الإختبارات المجتازة : ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1044, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "رقم الطلب للرخصة المحلية : ";
+            // 
+            // ctrApplicationBiscInfo1
+            // 
+            this.ctrApplicationBiscInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.ctrApplicationBiscInfo1.Location = new System.Drawing.Point(3, 225);
+            this.ctrApplicationBiscInfo1.Name = "ctrApplicationBiscInfo1";
+            this.ctrApplicationBiscInfo1.Size = new System.Drawing.Size(1248, 308);
+            this.ctrApplicationBiscInfo1.TabIndex = 1;
+            // 
             // pictureBox13
             // 
             this.pictureBox13.Image = global::DVLD_AR.Properties.Resources.License_Type_32;
@@ -137,53 +185,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // llLicenseInfo
-            // 
-            this.llLicenseInfo.AutoSize = true;
-            this.llLicenseInfo.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llLicenseInfo.LinkColor = System.Drawing.Color.Lime;
-            this.llLicenseInfo.Location = new System.Drawing.Point(6, 193);
-            this.llLicenseInfo.Name = "llLicenseInfo";
-            this.llLicenseInfo.Size = new System.Drawing.Size(123, 24);
-            this.llLicenseInfo.TabIndex = 3;
-            this.llLicenseInfo.TabStop = true;
-            this.llLicenseInfo.Text = "معلومات الرخصة";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1059, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "نوع الرخصة المقدٌم عليها : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(454, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "الإختبارات المجتازة : ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1044, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "رقم الطلب للرخصة المحلية : ";
-            // 
-            // ctrApplicationBiscInfo1
-            // 
-            this.ctrApplicationBiscInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ctrApplicationBiscInfo1.Location = new System.Drawing.Point(3, 225);
-            this.ctrApplicationBiscInfo1.Name = "ctrApplicationBiscInfo1";
-            this.ctrApplicationBiscInfo1.Size = new System.Drawing.Size(1248, 308);
-            this.ctrApplicationBiscInfo1.TabIndex = 1;
             // 
             // ctrDrivingLicenseApplicationInfo
             // 

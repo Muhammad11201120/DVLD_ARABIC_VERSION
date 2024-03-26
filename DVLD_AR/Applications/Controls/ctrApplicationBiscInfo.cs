@@ -26,7 +26,7 @@ namespace DVLD_AR.Applications.Controls
         {
             InitializeComponent();
         }
-        public void _ResestDefaultValues()
+        public void ResestDefaultValues()
         {
             _ApplicationID = -1;
             lblApplicant.Text = "???";
@@ -38,7 +38,7 @@ namespace DVLD_AR.Applications.Controls
             lblCreatedByUserID.Text = "???";
             lblApplicationID.Text = "???";
         }
-        public void _FillData()
+        public void FillData()
         {
             _ApplicationID = _Application.ApplicationID;
             lblApplicant.Text = _Application.ApplicantFullName;
@@ -50,16 +50,16 @@ namespace DVLD_AR.Applications.Controls
             lblCreatedByUserID.Text = clsGlobal.CurrentUser.UserName;
             lblApplicationID.Text = _Application.ApplicationID.ToString();
         }
-        public void _LoadData()
+        public void LoadData( int applicationID )
         {
-            _Application = clsApplication.FindBaseApplication( _ApplicationID );
+            _Application = clsApplication.FindBaseApplication( applicationID );
             if ( _Application == null )
             {
-                _ResestDefaultValues();
+                ResestDefaultValues();
                 MessageBox.Show( ToString(), "الطلب غير موجود", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
             else
-                _FillData();
+                FillData();
         }
 
         private void llPersonInfo_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
@@ -67,7 +67,7 @@ namespace DVLD_AR.Applications.Controls
             frmShowPersonInfo frm = new frmShowPersonInfo( _ApplicationID );
             frm.ShowDialog();
 
-            _LoadData();
+            LoadData( _ApplicationID );
         }
     }
 }

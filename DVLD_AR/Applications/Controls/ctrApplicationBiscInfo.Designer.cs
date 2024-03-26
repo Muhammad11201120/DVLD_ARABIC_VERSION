@@ -352,6 +352,7 @@
             this.llPersonInfo.TabIndex = 4;
             this.llPersonInfo.TabStop = true;
             this.llPersonInfo.Text = "معلومات صاحب الرخصة";
+            this.llPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llPersonInfo_LinkClicked);
             // 
             // ctrApplicationBiscInfo
             // 

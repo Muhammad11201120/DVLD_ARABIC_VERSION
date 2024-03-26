@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\Controls\ctrApplicationBiscInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Controls\ctrApplicationBiscInfo.Designer.cs">
+      <DependentUpon>ctrApplicationBiscInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\ctrDrivingLicenseApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\ctrDrivingLicenseApplicationInfo.Designer.cs">
+      <DependentUpon>ctrDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmAddEditLocaLDrivingLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmAddEditLocaLDrivingLicenseApplication.Designer.cs">
+      <DependentUpon>frmAddEditLocaLDrivingLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Manage_Application_Types\frmAllApplicationTypesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +135,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Tests\TestTypes\frmEditTestTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\TestTypes\frmEditTestTypes.Designer.cs">
+      <DependentUpon>frmEditTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\TestTypes\frmListAllTestTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\TestTypes\frmListAllTestTypes.Designer.cs">
+      <DependentUpon>frmListAllTestTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Controls\ctrUserInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +177,15 @@
     <Compile Include="Users\frmShowUserInfo.Designer.cs">
       <DependentUpon>frmShowUserInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Applications\Controls\ctrApplicationBiscInfo.resx">
+      <DependentUpon>ctrApplicationBiscInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\ctrDrivingLicenseApplicationInfo.resx">
+      <DependentUpon>ctrDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmAddEditLocaLDrivingLicenseApplication.resx">
+      <DependentUpon>frmAddEditLocaLDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\Manage_Application_Types\frmAllApplicationTypesList.resx">
       <DependentUpon>frmAllApplicationTypesList.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +220,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\TestTypes\frmEditTestTypes.resx">
+      <DependentUpon>frmEditTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\TestTypes\frmListAllTestTypes.resx">
+      <DependentUpon>frmListAllTestTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Controls\ctrUserInfoCard.resx">
       <DependentUpon>ctrUserInfoCard.cs</DependentUpon>
@@ -357,5 +402,24 @@
   <ItemGroup>
     <None Include="Resources\Applications1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestType 5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prev 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Street Test 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License Type 321.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

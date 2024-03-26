@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblApplicationTypeID = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@
             this.txtApplicationTypeFees = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider( this.components );
+            ( ( System.ComponentModel.ISupportInitialize ) ( this.errorProvider1 ) ).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,6 +104,7 @@
             this.txtApplicationTypeTitle.Name = "txtApplicationTypeTitle";
             this.txtApplicationTypeTitle.Size = new System.Drawing.Size( 373, 26 );
             this.txtApplicationTypeTitle.TabIndex = 5;
+            this.txtApplicationTypeTitle.Validating += new System.ComponentModel.CancelEventHandler( this.txtApplicationTypeTitle_Validating );
             // 
             // txtApplicationTypeFees
             // 
@@ -109,6 +113,7 @@
             this.txtApplicationTypeFees.Name = "txtApplicationTypeFees";
             this.txtApplicationTypeFees.Size = new System.Drawing.Size( 373, 26 );
             this.txtApplicationTypeFees.TabIndex = 6;
+            this.txtApplicationTypeFees.Validating += new System.ComponentModel.CancelEventHandler( this.txtApplicationTypeFees_Validating );
             // 
             // btnClose
             // 
@@ -138,6 +143,10 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler( this.btnSave_Click );
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmEditApplicationType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
@@ -160,6 +169,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "تعديل نوع الطلب";
             this.Load += new System.EventHandler( this.frmEditApplicationType_Load );
+            ( ( System.ComponentModel.ISupportInitialize ) ( this.errorProvider1 ) ).EndInit();
             this.ResumeLayout( false );
             this.PerformLayout();
 
@@ -176,5 +186,6 @@
         private System.Windows.Forms.TextBox txtApplicationTypeFees;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

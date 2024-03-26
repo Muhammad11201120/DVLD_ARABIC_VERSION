@@ -27,3 +27,8 @@ D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Users.frmChangeUserPassword.r
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Login.frmLogin.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Manage_Application_Types.frmAllApplicationTypesList.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Manage_Application_Types.frmEditApplicationType.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.TestTypes.frmListAllTestTypes.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.TestTypes.frmEditTestTypes.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLicenseApplications.frmAddEditLocaLDrivingLicenseApplication.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLicenseApplications.ctrDrivingLicenseApplicationInfo.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Controls.ctrApplicationBiscInfo.resources

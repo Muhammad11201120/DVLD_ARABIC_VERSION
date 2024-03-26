@@ -36,6 +36,7 @@ namespace DVLD_AR.Applications.Manage_Application_Types
         {
             frmEditApplicationType frm = new frmEditApplicationType( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value );
             frm.ShowDialog();
+            _LoadData();
         }
     }
 }

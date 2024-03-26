@@ -1,4 +1,5 @@
-﻿using DVLD_Buisness;
+﻿using DVLD_AR.GeneralClasses;
+using DVLD_Buisness;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,10 +20,11 @@ namespace DVLD_AR.Applications.Manage_Application_Types
         {
             InitializeComponent();
             this._ApplicationTypeID = applicationTypeID;
-            clsApplicationType.Find( applicationTypeID );
+            this._ApplicationType = clsApplicationType.Find( this._ApplicationTypeID );
         }
-        private void _LoadDatat()
+        private void _LoadData()
         {
+
             if ( this._ApplicationType == null )
             {
                 MessageBox.Show( "لايوجد نوع طلب بهذا الرقم" );
@@ -30,7 +32,7 @@ namespace DVLD_AR.Applications.Manage_Application_Types
                 return;
             }
             lblApplicationTypeID.Text = _ApplicationTypeID.ToString();
-            txtApplicationTypeTitle.Text = _ApplicationTypeID.ToString();
+            txtApplicationTypeTitle.Text = _ApplicationType.Title.ToString();
             txtApplicationTypeFees.Text = _ApplicationType.Fees.ToString();
         }
         private void btnClose_Click( object sender, EventArgs e )
@@ -40,20 +42,61 @@ namespace DVLD_AR.Applications.Manage_Application_Types
 
         private void frmEditApplicationType_Load( object sender, EventArgs e )
         {
-            _LoadDatat();
+            _LoadData();
         }
 
         private void btnSave_Click( object sender, EventArgs e )
         {
+            if ( !this.ValidateChildren() )
+            {
+                MessageBox.Show( "القيم في بعض الحقول غير صحيحة مرٌر الفاره على علامة التعجب الحمراء ليظهر لك نوع الخطأ", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Information );
+                return;
+            }
             _ApplicationType.Title = txtApplicationTypeTitle.Text.Trim();
             _ApplicationType.Fees = float.Parse( txtApplicationTypeFees.Text.Trim() );
             if ( _ApplicationType.Save() )
             {
                 MessageBox.Show( "تم حفظ البيانات بنجاح", "تم الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Information );
+                this.Close();
             }
             else
             {
                 MessageBox.Show( "خطأ أثناء محاولة حفظ البيانات الرجاء المحاولة مرة أخرى", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            }
+        }
+
+        private void txtApplicationTypeTitle_Validating( object sender, CancelEventArgs e )
+        {
+            if ( string.IsNullOrEmpty( txtApplicationTypeTitle.Text ) )
+            {
+                e.Cancel = true;
+                errorProvider1.SetError( txtApplicationTypeTitle, "هذا الحقل مطلوب" );
+            }
+            else
+            {
+                errorProvider1.SetError( txtApplicationTypeTitle, null );
+            }
+        }
+
+        private void txtApplicationTypeFees_Validating( object sender, CancelEventArgs e )
+        {
+            if ( string.IsNullOrEmpty( txtApplicationTypeFees.Text ) )
+            {
+                e.Cancel = true;
+                errorProvider1.SetError( txtApplicationTypeFees, "هذا الحقل مطلوب" );
+            }
+            else
+            {
+                errorProvider1.SetError( txtApplicationTypeTitle, null );
+            }
+            if ( !clsValidatoin.IsNumber( txtApplicationTypeFees.Text ) )
+            {
+                e.Cancel = true;
+                errorProvider1.SetError( txtApplicationTypeFees, "الرجاء إدخال قيمة رقمية فقط" );
+            }
+            else
+            {
+                errorProvider1.SetError( txtApplicationTypeTitle, null );
             }
         }
     }

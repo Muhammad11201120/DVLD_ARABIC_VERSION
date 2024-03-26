@@ -1,7 +1,9 @@
-﻿using DVLD_AR.Applications.Manage_Application_Types;
+﻿using DVLD_AR.Applications.LocalDrivingLicenseApplications;
+using DVLD_AR.Applications.Manage_Application_Types;
 using DVLD_AR.GeneralClasses;
 using DVLD_AR.Login;
 using DVLD_AR.People;
+using DVLD_AR.Tests.TestTypes;
 using DVLD_AR.Users;
 using System;
 using System.Collections.Generic;
@@ -66,6 +68,18 @@ namespace DVLD_AR
         private void toolStripMenuItem4_Click( object sender, EventArgs e )
         {
             frmAllApplicationTypesList frm = new frmAllApplicationTypesList();
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem5_Click( object sender, EventArgs e )
+        {
+            frmListAllTestTypes frm = new frmListAllTestTypes();
+            frm.ShowDialog();
+        }
+
+        private void رخصةمحليةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddEditLocaLDrivingLicenseApplication frm = new frmAddEditLocaLDrivingLicenseApplication();
             frm.ShowDialog();
         }
     }

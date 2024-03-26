@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,12 +29,27 @@ namespace DVLD_AR.People.Controllers
         {
             InitializeComponent();
         }
+        public void ResetPersonInfo()
+        {
+            _PersonID = -1;
+            txtPersonID.Text = "[????]";
+            txtNationalNo.Text = "[????]";
+            txtFullName.Text = "[????]";
+            txtGendor.Text = "[????]";
+            txtEmail.Text = "[????]";
+            txtPhone.Text = "[????]";
+            txtDateOfBirth.Text = "[????]";
+            txtNationality.Text = "[????]";
+            txtAddress.Text = "[????]";
+            pbxPersonImage.Image = Resources.Male512;
 
+        }
         public void LoadPerson( int personID )
         {
             _Person = clsPerson.Find( personID );
             if ( _Person == null )
             {
+                ResetPersonInfo();
                 MessageBox.Show( "لايوجد شخص بهذا المعرٌف. = " + personID.ToString(), "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }
@@ -44,6 +60,7 @@ namespace DVLD_AR.People.Controllers
             _Person = clsPerson.Find( nationalNo );
             if ( _Person == null )
             {
+                ResetPersonInfo();
                 MessageBox.Show( "لايوجد مستخدم بهذه الهويٌة. = " + nationalNo, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }

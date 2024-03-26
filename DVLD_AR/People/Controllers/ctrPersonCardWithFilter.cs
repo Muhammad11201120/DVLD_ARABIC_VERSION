@@ -116,9 +116,10 @@ namespace DVLD_AR.People.Controllers
 
         private void txtFilterValue_Validating( object sender, CancelEventArgs e )
         {
-            if ( string.IsNullOrEmpty( txtFilterValue.Text.Trim() ) && gbxFilter.Text == string.Empty )
+            if ( string.IsNullOrEmpty( txtFilterValue.Text.Trim() ) )
             {
-                errorProvider1.SetError( txtFilterValue, "هذا الحقل مطلوب !" );
+                e.Cancel = true;
+                errorProvider1.SetError( txtFilterValue, "هذاالحقل مطلوب !" );
             }
             else
             {

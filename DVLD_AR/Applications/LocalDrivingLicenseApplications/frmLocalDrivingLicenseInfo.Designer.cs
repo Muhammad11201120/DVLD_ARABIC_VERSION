@@ -45,6 +45,7 @@
             this.button1.Text = "إغلاق";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ctrDrivingLicenseApplicationInfo1
             // 
@@ -70,6 +71,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "معلومات طلب رخصة محلية";
+            this.Load += new System.EventHandler(this.frmLocalDrivingLicenseInfo_Load);
             this.ResumeLayout(false);
 
         }

@@ -39,6 +39,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnRigester = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -161,21 +162,44 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "مرحبا في برنامج ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.button1.Image = global::DVLD_AR.Properties.Resources.cross_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(31, 874);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(404, 40);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "خروج";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnRigester
             // 
+            this.btnRigester.BackColor = System.Drawing.Color.White;
+            this.btnRigester.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRigester.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRigester.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRigester.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.btnRigester.Image = global::DVLD_AR.Properties.Resources.Edit_User_32;
             this.btnRigester.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRigester.Location = new System.Drawing.Point(31, 818);
+            this.btnRigester.Location = new System.Drawing.Point(31, 815);
             this.btnRigester.Name = "btnRigester";
             this.btnRigester.Size = new System.Drawing.Size(404, 40);
             this.btnRigester.TabIndex = 11;
             this.btnRigester.Text = "تسجيل جديد";
-            this.btnRigester.UseVisualStyleBackColor = true;
+            this.btnRigester.UseVisualStyleBackColor = false;
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.btnLogin.Image = global::DVLD_AR.Properties.Resources.sign_in_32;
@@ -185,7 +209,7 @@
             this.btnLogin.Size = new System.Drawing.Size(404, 40);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "دخول";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox3
@@ -238,7 +262,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(456, 926);
+            this.ClientSize = new System.Drawing.Size(456, 939);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRigester);
             this.Controls.Add(this.chbxRememberMe);
@@ -288,5 +313,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }

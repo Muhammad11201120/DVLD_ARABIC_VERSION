@@ -82,5 +82,11 @@ namespace DVLD_AR
             frmAddEditLocaLDrivingLicenseApplication frm = new frmAddEditLocaLDrivingLicenseApplication();
             frm.ShowDialog();
         }
+
+        private void إدارةالرخصالمحليةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAllLocalDrivingApplicationsList frm = new frmAllLocalDrivingApplicationsList();
+            frm.ShowDialog();
+        }
     }
 }

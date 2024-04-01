@@ -70,5 +70,10 @@ namespace DVLD_AR.Login
             else
                 chbxRememberMe.Checked = false;
         }
+
+        private void button1_Click( object sender, EventArgs e )
+        {
+            this.Close();
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace DVLD_AR.People
             dv = new DataView( dt );
 
             dataGridView1.DataSource = dv;
+            cbxFilters.SelectedIndex = 10;
         }
         private void button1_Click( object sender, EventArgs e )
         {
@@ -116,7 +117,7 @@ namespace DVLD_AR.People
 
         private void cbxFilters_SelectedIndexChanged( object sender, EventArgs e )
         {
-            txtFilter.Visible = ( cbxFilters.Text != string.Empty );
+            txtFilter.Visible = ( cbxFilters.Text != "لاشئ" );
 
             if ( txtFilter.Visible )
             {

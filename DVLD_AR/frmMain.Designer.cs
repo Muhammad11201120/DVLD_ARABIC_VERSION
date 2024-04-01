@@ -61,6 +61,10 @@
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.تسجيلالخرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.إدارةالرخصالمحليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.إدارةالرخصالدوليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -136,6 +140,7 @@
             this.toolStripMenuItem6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.رخصةمحليةToolStripMenuItem,
+            this.toolStripSeparator11,
             this.رخصةدوليةToolStripMenuItem});
             this.toolStripMenuItem6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.toolStripMenuItem6.Image = global::DVLD_AR.Properties.Resources.New_Driving_License_32;
@@ -153,7 +158,7 @@
             this.رخصةمحليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.Local_32;
             this.رخصةمحليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةمحليةToolStripMenuItem.Name = "رخصةمحليةToolStripMenuItem";
-            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
+            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.رخصةمحليةToolStripMenuItem.Text = "رخصة محلية";
             this.رخصةمحليةToolStripMenuItem.Click += new System.EventHandler(this.رخصةمحليةToolStripMenuItem_Click);
             // 
@@ -164,7 +169,7 @@
             this.رخصةدوليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.International_32;
             this.رخصةدوليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةدوليةToolStripMenuItem.Name = "رخصةدوليةToolStripMenuItem";
-            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
+            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.رخصةدوليةToolStripMenuItem.Text = "رخصة دولية";
             // 
             // toolStripSeparator5
@@ -235,6 +240,10 @@
             // 
             // toolStripMenuItem2
             // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.إدارةالرخصالمحليةToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.إدارةالرخصالدوليةToolStripMenuItem});
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Rubik", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.toolStripMenuItem2.Image = global::DVLD_AR.Properties.Resources.Manage_Applications_32;
@@ -385,6 +394,29 @@
             this.panel2.Size = new System.Drawing.Size(1378, 704);
             this.panel2.TabIndex = 1;
             // 
+            // إدارةالرخصالمحليةToolStripMenuItem
+            // 
+            this.إدارةالرخصالمحليةToolStripMenuItem.Name = "إدارةالرخصالمحليةToolStripMenuItem";
+            this.إدارةالرخصالمحليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
+            this.إدارةالرخصالمحليةToolStripMenuItem.Text = "إدارة الرخص المحليٌة";
+            this.إدارةالرخصالمحليةToolStripMenuItem.Click += new System.EventHandler(this.إدارةالرخصالمحليةToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(250, 6);
+            // 
+            // إدارةالرخصالدوليةToolStripMenuItem
+            // 
+            this.إدارةالرخصالدوليةToolStripMenuItem.Name = "إدارةالرخصالدوليةToolStripMenuItem";
+            this.إدارةالرخصالدوليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
+            this.إدارةالرخصالدوليةToolStripMenuItem.Text = "إدارة الرخص الدوليٌة";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(193, 6);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +477,10 @@
         private System.Windows.Forms.ToolStripMenuItem تغييركلمةالمرورToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تسجيلالخرToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالرخصالمحليةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالرخصالدوليةToolStripMenuItem;
     }
 }
 

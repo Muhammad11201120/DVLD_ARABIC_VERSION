@@ -5,9 +5,9 @@ VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_AR", "DVLD_AR.csproj", "{D265299E-D936-465B-9394-4A91B22228C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_Buisness", "..\..\DVLD_Fiinal_Version\DVLD Project Final\Project\DVLD_Buisness\DVLD_Buisness.csproj", "{46A8427B-DCFC-4DAF-A14C-E3F4789A993D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_Buisness", "..\DVLD_Buisness\DVLD_Buisness.csproj", "{46A8427B-DCFC-4DAF-A14C-E3F4789A993D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_DataAccess", "..\..\DVLD_Fiinal_Version\DVLD Project Final\Project\DVLD_DataAccess\DVLD_DataAccess.csproj", "{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_DataAccess", "..\DVLD_DataAccess\DVLD_DataAccess.csproj", "{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

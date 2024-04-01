@@ -12,9 +12,21 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
 {
     public partial class frmLocalDrivingLicenseInfo : Form
     {
-        public frmLocalDrivingLicenseInfo()
+        private int _ApplicationID = -1;
+        public frmLocalDrivingLicenseInfo( int ApplicationID )
         {
             InitializeComponent();
+            _ApplicationID = ApplicationID;
+        }
+
+        private void frmLocalDrivingLicenseInfo_Load( object sender, EventArgs e )
+        {
+            ctrDrivingLicenseApplicationInfo1.LoadInfoByLocalDrivingAppID( _ApplicationID );
+        }
+
+        private void button1_Click( object sender, EventArgs e )
+        {
+            this.Close();
         }
     }
 }

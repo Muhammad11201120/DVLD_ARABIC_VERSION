@@ -1,4 +1,5 @@
-﻿using DVLD_Buisness;
+﻿using DVLD_AR.Tests;
+using DVLD_Buisness;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -239,8 +240,8 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
         {
             int LocalDrivingLicenseApplicationID = ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value;
             clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID( LocalDrivingLicenseApplicationID );
-            //frmScheduleTest frm = new frmScheduleTest( LocalDrivingLicenseApplicationID, TestType );
-            //frm.ShowDialog();
+            frmScheduleTest frm = new frmScheduleTest( LocalDrivingLicenseApplicationID, TestType );
+            frm.ShowDialog();
             //refresh
             _LoadData();
         }

@@ -34,3 +34,5 @@ D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLice
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Controls.ctrApplicationBiscInfo.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLicenseApplications.frmLocalDrivingLicenseInfo.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLicenseApplications.frmAllLocalDrivingApplicationsList.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.Controls.ctrScheduleTest.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.frmScheduleTest.resources

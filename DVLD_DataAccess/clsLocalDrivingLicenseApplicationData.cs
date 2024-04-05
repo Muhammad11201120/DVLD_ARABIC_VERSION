@@ -126,12 +126,9 @@ namespace DVLD_DataAccess
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
-            string query = @"SELECT LocalDrivingLicenseApplicationID as [المعرٌف], ClassName as [نوع الرخصة], NationalNo as[الهويٌة], FullName as [الإسم], ApplicationDate as [تاريخ الطلب] , PassedTestCount as [الإختبارات المجتازة], Status as[الحالة]
+            string query = @"SELECT LocalDrivingLicenseApplicationID as [المعرٌف], ClassName as [نوع الرخصة], NationalNo as[الهويٌة], FullName as [الإسم], ApplicationDate as [تاريخ الطلب] , PassedTestCount as [الإختبارات المجتازة],Status as[الحالة]
                               FROM LocalDrivingLicenseApplications_View
                               order by ApplicationDate Desc";
-
-
-
 
             SqlCommand command = new SqlCommand( query, connection );
 
@@ -148,7 +145,6 @@ namespace DVLD_DataAccess
                 }
 
                 reader.Close();
-
 
             }
 

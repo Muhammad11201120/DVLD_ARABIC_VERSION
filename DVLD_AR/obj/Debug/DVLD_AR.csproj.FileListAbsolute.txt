@@ -36,3 +36,15 @@ D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLice
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.LocalDrivingLicenseApplications.frmAllLocalDrivingApplicationsList.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.Controls.ctrScheduleTest.resources
 D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.frmScheduleTest.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.TestTypes.frmListAllTestAppointments.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.frmTakeTest.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Tests.Controls.ctrScehduledTest.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.Local_License.frmIssueDriverLicenseForFirstTime.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.Controls.ctrDriverLicenseInfo.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.Local_License.frmShowLicenseInfo.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Renew_Local_License.frmRenewLicense.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.Controls.ctrDriverLicenseInfoWithFilter.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.Replace_Lost_Or_Damaged_License.frmReplacementForDamagedOrLostLicense.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Drivers.frmListAllDrivers.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.Controls.ctrDriverLicenses.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.frmShowPersonLicenseHistory.resources

@@ -11,7 +11,7 @@ namespace DVLD_Buisness
         public enum enApplicationType
         {
             NewDrivingLicense = 1, RenewDrivingLicense = 2, ReplaceLostDrivingLicense = 3,
-            ReplaceDamagedDrivingLicense = 4, ReleaseDetainedDrivingLicsense = 5, NewInternationalLicense = 6, RetakeTest = 7
+            ReplaceDamagedDrivingLicense = 4, ReleaseDetainedDrivingLicsense = 5, NewInternationalLicense = 6, RetakeTest = 9
         };
 
         public enMode Mode = enMode.AddNew;
@@ -141,13 +141,13 @@ namespace DVLD_Buisness
         public bool Cancel()
 
         {
-            return clsApplicationData.UpdateStatus( ApplicationID, 2 );
+            return clsApplicationData.UpdateStatus( ApplicationID, ( int ) enApplicationStatus.Cancelled );
         }
 
         public bool SetComplete()
 
         {
-            return clsApplicationData.UpdateStatus( ApplicationID, 3 );
+            return clsApplicationData.UpdateStatus( ApplicationID, ( int ) enApplicationStatus.Completed );
         }
 
         public bool Save()

@@ -1,5 +1,7 @@
 ﻿using DVLD_AR.Applications.LocalDrivingLicenseApplications;
 using DVLD_AR.Applications.Manage_Application_Types;
+using DVLD_AR.Applications.Renew_Local_License;
+using DVLD_AR.Drivers;
 using DVLD_AR.GeneralClasses;
 using DVLD_AR.Login;
 using DVLD_AR.People;
@@ -86,6 +88,18 @@ namespace DVLD_AR
         private void إدارةالرخصالمحليةToolStripMenuItem_Click( object sender, EventArgs e )
         {
             frmAllLocalDrivingApplicationsList frm = new frmAllLocalDrivingApplicationsList();
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem7_Click( object sender, EventArgs e )
+        {
+            frmRenewLicense frm = new frmRenewLicense();
+            frm.ShowDialog();
+        }
+
+        private void السائقونToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmListAllDrivers frm = new frmListAllDrivers();
             frm.ShowDialog();
         }
     }

@@ -29,26 +29,26 @@ namespace DVLD_AR.Applications.Controls
         public void ResestDefaultValues()
         {
             _ApplicationID = -1;
-            lblApplicant.Text = "???";
-            lblApplicationDate.Text = "???";
-            lblApplicationFees.Text = "???";
-            lblApplicationStatus.Text = "???";
-            lblApplicationType.Text = "???";
-            lblApplicationStatusDate.Text = "???";
-            lblCreatedByUserID.Text = "???";
-            lblApplicationID.Text = "???";
+            txtApplicant.Text = "???";
+            txtAppDate.Text = "???";
+            txtAppFees.Text = "???";
+            txtAppStatus.Text = "???";
+            txtAppType.Text = "???";
+            txtAppStatusDate.Text = "???";
+            txtCreatedByUserID.Text = "???";
+            txtAppID.Text = "???";
         }
         public void FillData()
         {
             _ApplicationID = _Application.ApplicationID;
-            lblApplicant.Text = _Application.ApplicantFullName;
-            lblApplicationDate.Text = _Application.ApplicationDate.ToShortDateString();
-            lblApplicationFees.Text = _Application.PaidFees.ToString();
-            lblApplicationStatus.Text = _Application.ApplicationStatus.ToString();
-            lblApplicationType.Text = _Application.ApplicationDate.ToString();
-            lblApplicationStatusDate.Text = _Application.LastStatusDate.ToShortDateString();
-            lblCreatedByUserID.Text = clsGlobal.CurrentUser.UserName;
-            lblApplicationID.Text = _Application.ApplicationID.ToString();
+            txtApplicant.Text = _Application.ApplicantFullName;
+            txtAppDate.Text = _Application.ApplicationDate.ToShortDateString();
+            txtAppFees.Text = _Application.PaidFees.ToString();
+            txtAppStatus.Text = _Application.ApplicationStatus.ToString();
+            txtAppType.Text = _Application.ApplicationTypeInfo.Title.ToString();
+            txtAppStatusDate.Text = _Application.LastStatusDate.ToShortDateString();
+            txtCreatedByUserID.Text = clsGlobal.CurrentUser.UserName;
+            txtAppID.Text = _Application.ApplicationID.ToString();
         }
         public void LoadData( int applicationID )
         {

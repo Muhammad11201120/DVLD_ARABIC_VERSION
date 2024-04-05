@@ -139,7 +139,7 @@
             this.تاريخرخصالمستفيدToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(226, 366);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(226, 344);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // إظهارمعلوماتالToolStripMenuItem
@@ -308,7 +308,7 @@
             // 
             // cbxFilters
             // 
-            this.cbxFilters.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxFilters.Font = new System.Drawing.Font("Arial Nova Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilters.FormattingEnabled = true;
             this.cbxFilters.Items.AddRange(new object[] {
             "لاشئ",
@@ -316,18 +316,18 @@
             "الهويٌة",
             "الإسم",
             "الحالة"});
-            this.cbxFilters.Location = new System.Drawing.Point(82, 306);
+            this.cbxFilters.Location = new System.Drawing.Point(82, 308);
             this.cbxFilters.Name = "cbxFilters";
-            this.cbxFilters.Size = new System.Drawing.Size(276, 31);
+            this.cbxFilters.Size = new System.Drawing.Size(276, 28);
             this.cbxFilters.TabIndex = 5;
             this.cbxFilters.SelectedIndexChanged += new System.EventHandler(this.cbxFilters_SelectedIndexChanged);
             // 
             // txtFilter
             // 
-            this.txtFilter.Font = new System.Drawing.Font("Rubik", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilter.Location = new System.Drawing.Point(364, 308);
+            this.txtFilter.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilter.Location = new System.Drawing.Point(364, 311);
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(322, 30);
+            this.txtFilter.Size = new System.Drawing.Size(322, 26);
             this.txtFilter.TabIndex = 6;
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             this.txtFilter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilter_KeyPress);

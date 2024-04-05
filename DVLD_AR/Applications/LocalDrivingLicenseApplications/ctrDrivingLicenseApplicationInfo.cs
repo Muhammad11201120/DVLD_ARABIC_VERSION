@@ -28,9 +28,9 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
         public void ResetDefaultValues()
         {
             _LocalDrivingLicenseApplicationID = -1;
-            lblLocalApplicationID.Text = "???";
-            lblLicenseClass.Text = "???";
-            lblPassedTests.Text = "???";
+            txtLocalLicenseAppID.Text = "???";
+            txtLicenseType.Text = "???";
+            txtPassedTests.Text = "???";
         }
         public void LoadInfoByLocalDrivingAppID( int localDrivingAppID )
         {
@@ -67,9 +67,9 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
             llLicenseInfo.Enabled = ( _LicenseID != -1 );
 
 
-            lblLocalApplicationID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
-            lblLicenseClass.Text = clsLicenseClass.Find( _LocalDrivingLicenseApplication.LicenseClassID ).ClassName;
-            lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString() + "/3";
+            txtLocalLicenseAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
+            txtLicenseType.Text = clsLicenseClass.Find( _LocalDrivingLicenseApplication.LicenseClassID ).ClassName;
+            txtPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString() + "/3";
             ctrApplicationBiscInfo1.LoadData( _LocalDrivingLicenseApplication.ApplicationID );
         }
 

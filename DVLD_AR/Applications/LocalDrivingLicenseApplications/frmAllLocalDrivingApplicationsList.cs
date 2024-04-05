@@ -1,4 +1,6 @@
-﻿using DVLD_AR.Tests;
+﻿using DVLD_AR.Licenses.Local_License;
+using DVLD_AR.Tests;
+using DVLD_AR.Tests.TestTypes;
 using DVLD_Buisness;
 using System;
 using System.Collections.Generic;
@@ -206,27 +208,27 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
 
         private void إصدارالرخصةأولمرةToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            //int LocalDrivingLicenseApplicationID = ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value;
-            //frmIssueDriverLicenseFirstTime frm = new frmIssueDriverLicenseFirstTime( LocalDrivingLicenseApplicationID );
-            //frm.ShowDialog();
-            ////refresh
-            //_LoadData();
+            int LocalDrivingLicenseApplicationID = ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value;
+            frmIssueDriverLicenseForFirstTime frm = new frmIssueDriverLicenseForFirstTime( LocalDrivingLicenseApplicationID );
+            frm.ShowDialog();
+            //refresh
+            _LoadData();
         }
 
         private void إظهارالرخصةToolStripMenuItem_Click( object sender, EventArgs e )
         {
             int LicenseID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value ).GetActiveLicenseID();
-            //if ( LicenseID != -1 )
-            //{
-            //    frmShowLicenseInfo frm = new frmShowLicenseInfo( LicenseID );
-            //    frm.ShowDialog();
+            if ( LicenseID != -1 )
+            {
+                frmShowLicenseInfo frm = new frmShowLicenseInfo( LicenseID );
+                frm.ShowDialog();
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show( "لا توجد رخصة!", "لاتوجد رخصة", MessageBoxButtons.OK, MessageBoxIcon.Error );
-            //    return;
-            //}
+            }
+            else
+            {
+                MessageBox.Show( "لا توجد رخصة!", "لاتوجد رخصة", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                return;
+            }
         }
 
         private void تاريخرخصالمستفيدToolStripMenuItem_Click( object sender, EventArgs e )
@@ -240,7 +242,7 @@ namespace DVLD_AR.Applications.LocalDrivingLicenseApplications
         {
             int LocalDrivingLicenseApplicationID = ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value;
             clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID( LocalDrivingLicenseApplicationID );
-            frmScheduleTest frm = new frmScheduleTest( LocalDrivingLicenseApplicationID, TestType );
+            frmListAllTestAppointments frm = new frmListAllTestAppointments( LocalDrivingLicenseApplicationID, TestType );
             frm.ShowDialog();
             //refresh
             _LoadData();

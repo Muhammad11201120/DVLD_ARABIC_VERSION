@@ -15,129 +15,80 @@ namespace DVLD_DataAccess
     public class clsLicenseData
     {
 
-        public static bool GetLicenseInfoByID(int LicenseID,ref int ApplicationID, ref int DriverID, ref int LicenseClass,
-            ref DateTime IssueDate, ref DateTime ExpirationDate,ref string Notes,
-            ref float PaidFees,ref bool IsActive, ref byte IssueReason, ref int CreatedByUserID)
+        public static bool GetLicenseInfoByID( int LicenseID, ref int ApplicationID, ref int DriverID, ref int LicenseClass,
+            ref DateTime IssueDate, ref DateTime ExpirationDate, ref string Notes,
+            ref float PaidFees, ref bool IsActive, ref byte IssueReason, ref int CreatedByUserID )
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
+
+            string query = "SELECT * FROM Licenses WHERE LicenseID = @LicenseID";
+
+            SqlCommand command = new SqlCommand( query, connection );
+
+            command.Parameters.AddWithValue( "@LicenseID", LicenseID );
+
+            try
             {
-                bool isFound = false;
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
 
-                SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-
-                string query = "SELECT * FROM Licenses WHERE LicenseID = @LicenseID";
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                command.Parameters.AddWithValue("@LicenseID", LicenseID);
-
-                try
+                if ( reader.Read() )
                 {
-                    connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
 
-                    if (reader.Read())
-                    {
+                    // The record was found
+                    isFound = true;
+                    ApplicationID = ( int ) reader[ "ApplicationID" ];
+                    DriverID = ( int ) reader[ "DriverID" ];
+                    LicenseClass = ( int ) reader[ "LicenseClass" ];
+                    IssueDate = ( DateTime ) reader[ "IssueDate" ];
+                    ExpirationDate = ( DateTime ) reader[ "ExpirationDate" ];
 
-                        // The record was found
-                        isFound = true;
-                        ApplicationID= (int)reader["ApplicationID"];
-                        DriverID  = (int)reader["DriverID"];
-                        LicenseClass = (int)reader["LicenseClass"];
-                        IssueDate=(DateTime)reader["IssueDate"];
-                        ExpirationDate = (DateTime)reader["ExpirationDate"];
-
-                        if (reader["Notes"]==DBNull.Value)
-                            Notes = "";
-                        else
-                            Notes = (string)reader["Notes"];
-
-                        PaidFees = Convert.ToSingle(reader["PaidFees"]);
-                        IsActive = (bool)reader["IsActive"];
-                        IssueReason = (byte)reader["IssueReason"];
-                        CreatedByUserID = (int)reader["DriverID"];
-
-
-                }
+                    if ( reader[ "Notes" ] == DBNull.Value )
+                        Notes = "";
                     else
-                    {
-                        // The record was not found
-                        isFound = false;
-                    }
+                        Notes = ( string ) reader[ "Notes" ];
 
-                    reader.Close();
+                    PaidFees = Convert.ToSingle( reader[ "PaidFees" ] );
+                    IsActive = ( bool ) reader[ "IsActive" ];
+                    IssueReason = ( byte ) reader[ "IssueReason" ];
+                    CreatedByUserID = ( int ) reader[ "DriverID" ];
 
 
                 }
-                catch (Exception ex)
+                else
                 {
-                    //Console.WriteLine("Error: " + ex.Message);
+                    // The record was not found
                     isFound = false;
                 }
-                finally
-                {
-                    connection.Close();
-                }
 
-                return isFound;
+                reader.Close();
+
+
             }
+            catch ( Exception ex )
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
 
         public static DataTable GetAllLicenses()
-            {
-
-                DataTable dt = new DataTable();
-                SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-
-                string query = "SELECT * FROM Licenses";
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                try
-                {
-                    connection.Open();
-
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    if (reader.HasRows)
-
-                    {
-                        dt.Load(reader);
-                    }
-
-                    reader.Close();
-
-
-                }
-
-                catch (Exception ex)
-                {
-                    // Console.WriteLine("Error: " + ex.Message);
-                }
-                finally
-                {
-                    connection.Close();
-                }
-
-                return dt;
-
-            }
-
-        public static DataTable GetDriverLicenses(int DriverID)
         {
 
             DataTable dt = new DataTable();
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
-            string query = @"SELECT     
-                           Licenses.LicenseID,
-                           ApplicationID,
-		                   LicenseClasses.ClassName, Licenses.IssueDate, 
-		                   Licenses.ExpirationDate, Licenses.IsActive
-                           FROM Licenses INNER JOIN
-                                LicenseClasses ON Licenses.LicenseClass = LicenseClasses.LicenseClassID
-                            where DriverID=@DriverID
-                            Order By IsActive Desc, ExpirationDate Desc";
+            string query = "SELECT * FROM Licenses";
 
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@DriverID", DriverID);
+            SqlCommand command = new SqlCommand( query, connection );
 
             try
             {
@@ -145,10 +96,10 @@ namespace DVLD_DataAccess
 
                 SqlDataReader reader = command.ExecuteReader();
 
-                if (reader.HasRows)
+                if ( reader.HasRows )
 
                 {
-                    dt.Load(reader);
+                    dt.Load( reader );
                 }
 
                 reader.Close();
@@ -156,7 +107,7 @@ namespace DVLD_DataAccess
 
             }
 
-            catch (Exception ex)
+            catch ( Exception ex )
             {
                 // Console.WriteLine("Error: " + ex.Message);
             }
@@ -169,13 +120,62 @@ namespace DVLD_DataAccess
 
         }
 
-        public static int AddNewLicense(  int ApplicationID, int DriverID,  int LicenseClass,
-             DateTime IssueDate,  DateTime ExpirationDate,  string Notes,
-             float PaidFees,  bool IsActive,byte IssueReason,  int CreatedByUserID)
+        public static DataTable GetDriverLicenses( int DriverID )
+        {
+
+            DataTable dt = new DataTable();
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
+
+            string query = @"SELECT     
+                           Licenses.LicenseID,
+                           ApplicationID,
+		                   LicenseClasses.ClassName, Licenses.IssueDate, 
+		                   Licenses.ExpirationDate, Licenses.IsActive
+                           FROM Licenses INNER JOIN
+                                LicenseClasses ON Licenses.LicenseClass = LicenseClasses.LicenseClassID
+                            where DriverID=@DriverID
+                            Order By IsActive Desc, ExpirationDate Desc";
+
+            SqlCommand command = new SqlCommand( query, connection );
+            command.Parameters.AddWithValue( "@DriverID", DriverID );
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if ( reader.HasRows )
+
+                {
+                    dt.Load( reader );
+                }
+
+                reader.Close();
+
+
+            }
+
+            catch ( Exception ex )
+            {
+                // Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+
+        }
+
+        public static int AddNewLicense( int ApplicationID, int DriverID, int LicenseClass,
+             DateTime IssueDate, DateTime ExpirationDate, string Notes,
+             float PaidFees, bool IsActive, byte IssueReason, int CreatedByUserID )
         {
             int LicenseID = -1;
 
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
             string query = @"
                               INSERT INTO Licenses
@@ -201,25 +201,25 @@ namespace DVLD_DataAccess
                                @CreatedByUserID);
                             SELECT SCOPE_IDENTITY();";
 
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
-            command.Parameters.AddWithValue("@DriverID", DriverID);
-            command.Parameters.AddWithValue("@LicenseClass", LicenseClass);
-            command.Parameters.AddWithValue("@IssueDate", IssueDate);
+            SqlCommand command = new SqlCommand( query, connection );
+            command.Parameters.AddWithValue( "@ApplicationID", ApplicationID );
+            command.Parameters.AddWithValue( "@DriverID", DriverID );
+            command.Parameters.AddWithValue( "@LicenseClass", LicenseClass );
+            command.Parameters.AddWithValue( "@IssueDate", IssueDate );
 
-            command.Parameters.AddWithValue("@ExpirationDate", ExpirationDate);
+            command.Parameters.AddWithValue( "@ExpirationDate", ExpirationDate );
 
-            if (Notes == "")
-                command.Parameters.AddWithValue("@Notes", DBNull.Value);
+            if ( Notes == "" )
+                command.Parameters.AddWithValue( "@Notes", DBNull.Value );
             else
-                command.Parameters.AddWithValue("@Notes", Notes);
+                command.Parameters.AddWithValue( "@Notes", Notes );
 
-            command.Parameters.AddWithValue("@PaidFees", PaidFees);
-            command.Parameters.AddWithValue("@IsActive", IsActive);
-            command.Parameters.AddWithValue("@IssueReason", IssueReason);
-     
-            command.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
-           
+            command.Parameters.AddWithValue( "@PaidFees", PaidFees );
+            command.Parameters.AddWithValue( "@IsActive", IsActive );
+            command.Parameters.AddWithValue( "@IssueReason", IssueReason );
+
+            command.Parameters.AddWithValue( "@CreatedByUserID", CreatedByUserID );
+
 
 
             try
@@ -228,16 +228,16 @@ namespace DVLD_DataAccess
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                if ( result != null && int.TryParse( result.ToString(), out int insertedID ) )
                 {
                     LicenseID = insertedID;
                 }
             }
 
-            catch (Exception ex)
+            catch ( Exception ex )
             {
                 //Console.WriteLine("Error: " + ex.Message);
-
+                throw new Exception( ex.Message );
             }
 
             finally
@@ -250,13 +250,13 @@ namespace DVLD_DataAccess
 
         }
 
-        public static bool UpdateLicense(int LicenseID ,int ApplicationID, int DriverID, int LicenseClass,
+        public static bool UpdateLicense( int LicenseID, int ApplicationID, int DriverID, int LicenseClass,
              DateTime IssueDate, DateTime ExpirationDate, string Notes,
-             float PaidFees, bool IsActive,byte IssueReason, int CreatedByUserID)
+             float PaidFees, bool IsActive, byte IssueReason, int CreatedByUserID )
         {
 
             int rowsAffected = 0;
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
             string query = @"UPDATE Licenses
                            SET ApplicationID=@ApplicationID, DriverID = @DriverID,
@@ -269,24 +269,24 @@ namespace DVLD_DataAccess
                               CreatedByUserID = @CreatedByUserID
                          WHERE LicenseID=@LicenseID";
 
-            SqlCommand command = new SqlCommand(query, connection);
+            SqlCommand command = new SqlCommand( query, connection );
 
-            command.Parameters.AddWithValue("@LicenseID", LicenseID);
-            command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
-            command.Parameters.AddWithValue("@DriverID", DriverID);
-            command.Parameters.AddWithValue("@LicenseClass", LicenseClass);
-            command.Parameters.AddWithValue("@IssueDate", IssueDate);
-            command.Parameters.AddWithValue("@ExpirationDate", ExpirationDate);
-            
-            if (Notes=="")
-                command.Parameters.AddWithValue("@Notes", DBNull.Value );
+            command.Parameters.AddWithValue( "@LicenseID", LicenseID );
+            command.Parameters.AddWithValue( "@ApplicationID", ApplicationID );
+            command.Parameters.AddWithValue( "@DriverID", DriverID );
+            command.Parameters.AddWithValue( "@LicenseClass", LicenseClass );
+            command.Parameters.AddWithValue( "@IssueDate", IssueDate );
+            command.Parameters.AddWithValue( "@ExpirationDate", ExpirationDate );
+
+            if ( Notes == "" )
+                command.Parameters.AddWithValue( "@Notes", DBNull.Value );
             else
-                command.Parameters.AddWithValue("@Notes", Notes);
+                command.Parameters.AddWithValue( "@Notes", Notes );
 
-            command.Parameters.AddWithValue("@PaidFees", PaidFees);
-            command.Parameters.AddWithValue("@IsActive", IsActive);
-            command.Parameters.AddWithValue("@IssueReason", IssueReason);
-            command.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
+            command.Parameters.AddWithValue( "@PaidFees", PaidFees );
+            command.Parameters.AddWithValue( "@IsActive", IsActive );
+            command.Parameters.AddWithValue( "@IssueReason", IssueReason );
+            command.Parameters.AddWithValue( "@CreatedByUserID", CreatedByUserID );
 
             try
             {
@@ -294,7 +294,7 @@ namespace DVLD_DataAccess
                 rowsAffected = command.ExecuteNonQuery();
 
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
                 //Console.WriteLine("Error: " + ex.Message);
                 return false;
@@ -305,14 +305,14 @@ namespace DVLD_DataAccess
                 connection.Close();
             }
 
-            return (rowsAffected > 0);
+            return ( rowsAffected > 0 );
         }
 
-        public static int GetActiveLicenseIDByPersonID(int PersonID,int LicenseClassID)
+        public static int GetActiveLicenseIDByPersonID( int PersonID, int LicenseClassID )
         {
             int LicenseID = -1;
 
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
             string query = @"SELECT        Licenses.LicenseID
                             FROM Licenses INNER JOIN
@@ -323,10 +323,10 @@ namespace DVLD_DataAccess
                               AND Drivers.PersonID = @PersonID
                               And IsActive=1;";
 
-            SqlCommand command = new SqlCommand(query, connection);
+            SqlCommand command = new SqlCommand( query, connection );
 
-            command.Parameters.AddWithValue("@PersonID", PersonID);
-            command.Parameters.AddWithValue("@LicenseClass", LicenseClassID);
+            command.Parameters.AddWithValue( "@PersonID", PersonID );
+            command.Parameters.AddWithValue( "@LicenseClass", LicenseClassID );
 
             try
             {
@@ -334,13 +334,13 @@ namespace DVLD_DataAccess
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                if ( result != null && int.TryParse( result.ToString(), out int insertedID ) )
                 {
                     LicenseID = insertedID;
                 }
             }
 
-            catch (Exception ex)
+            catch ( Exception ex )
             {
                 //Console.WriteLine("Error: " + ex.Message);
 
@@ -355,11 +355,11 @@ namespace DVLD_DataAccess
             return LicenseID;
         }
 
-        public static bool DeactivateLicense(int LicenseID)
+        public static bool DeactivateLicense( int LicenseID )
         {
 
             int rowsAffected = 0;
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            SqlConnection connection = new SqlConnection( clsDataAccessSettings.ConnectionString );
 
             string query = @"UPDATE Licenses
                            SET 
@@ -367,10 +367,10 @@ namespace DVLD_DataAccess
                              
                          WHERE LicenseID=@LicenseID";
 
-            SqlCommand command = new SqlCommand(query, connection);
+            SqlCommand command = new SqlCommand( query, connection );
 
-            command.Parameters.AddWithValue("@LicenseID", LicenseID);
-         
+            command.Parameters.AddWithValue( "@LicenseID", LicenseID );
+
 
             try
             {
@@ -378,7 +378,7 @@ namespace DVLD_DataAccess
                 rowsAffected = command.ExecuteNonQuery();
 
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
                 //Console.WriteLine("Error: " + ex.Message);
                 return false;
@@ -389,7 +389,7 @@ namespace DVLD_DataAccess
                 connection.Close();
             }
 
-            return (rowsAffected > 0);
+            return ( rowsAffected > 0 );
         }
 
     }

@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.gbTestType = new System.Windows.Forms.GroupBox();
+            this.txtFees = new System.Windows.Forms.TextBox();
+            this.txtTrials = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtLicenseClass = new System.Windows.Forms.TextBox();
+            this.txtLocalAppID = new System.Windows.Forms.TextBox();
             this.dtpAppDate = new System.Windows.Forms.DateTimePicker();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -39,11 +44,6 @@
             this.pbxTestType = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblLocalLicenseAppFees = new System.Windows.Forms.Label();
-            this.lblTrials = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblLicenseClass = new System.Windows.Forms.Label();
-            this.lblLocalLicenseAppID = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,12 +51,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbRetakeTest = new System.Windows.Forms.GroupBox();
+            this.txtTottalFees = new System.Windows.Forms.TextBox();
+            this.txtRetakeTestFees = new System.Windows.Forms.TextBox();
+            this.txtRetakeTestID = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lblRetakeTestAppID = new System.Windows.Forms.Label();
-            this.lblTotallFees = new System.Windows.Forms.Label();
-            this.lblRetakeTestFees = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -77,6 +77,11 @@
             // 
             // gbTestType
             // 
+            this.gbTestType.Controls.Add( this.txtFees );
+            this.gbTestType.Controls.Add( this.txtTrials );
+            this.gbTestType.Controls.Add( this.txtName );
+            this.gbTestType.Controls.Add( this.txtLicenseClass );
+            this.gbTestType.Controls.Add( this.txtLocalAppID );
             this.gbTestType.Controls.Add( this.dtpAppDate );
             this.gbTestType.Controls.Add( this.lblUserMessage );
             this.gbTestType.Controls.Add( this.pictureBox7 );
@@ -87,11 +92,6 @@
             this.gbTestType.Controls.Add( this.pbxTestType );
             this.gbTestType.Controls.Add( this.pictureBox3 );
             this.gbTestType.Controls.Add( this.pictureBox2 );
-            this.gbTestType.Controls.Add( this.lblLocalLicenseAppFees );
-            this.gbTestType.Controls.Add( this.lblTrials );
-            this.gbTestType.Controls.Add( this.lblName );
-            this.gbTestType.Controls.Add( this.lblLicenseClass );
-            this.gbTestType.Controls.Add( this.lblLocalLicenseAppID );
             this.gbTestType.Controls.Add( this.label8 );
             this.gbTestType.Controls.Add( this.label7 );
             this.gbTestType.Controls.Add( this.label6 );
@@ -106,6 +106,56 @@
             this.gbTestType.TabIndex = 0;
             this.gbTestType.TabStop = false;
             this.gbTestType.Text = "إختبار النظر";
+            // 
+            // txtFees
+            // 
+            this.txtFees.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFees.ForeColor = System.Drawing.Color.White;
+            this.txtFees.Location = new System.Drawing.Point( 28, 543 );
+            this.txtFees.Name = "txtFees";
+            this.txtFees.Size = new System.Drawing.Size( 320, 23 );
+            this.txtFees.TabIndex = 28;
+            // 
+            // txtTrials
+            // 
+            this.txtTrials.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtTrials.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTrials.ForeColor = System.Drawing.Color.White;
+            this.txtTrials.Location = new System.Drawing.Point( 28, 441 );
+            this.txtTrials.Name = "txtTrials";
+            this.txtTrials.Size = new System.Drawing.Size( 320, 23 );
+            this.txtTrials.TabIndex = 27;
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point( 28, 390 );
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size( 320, 23 );
+            this.txtName.TabIndex = 26;
+            // 
+            // txtLicenseClass
+            // 
+            this.txtLicenseClass.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtLicenseClass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLicenseClass.ForeColor = System.Drawing.Color.White;
+            this.txtLicenseClass.Location = new System.Drawing.Point( 28, 339 );
+            this.txtLicenseClass.Name = "txtLicenseClass";
+            this.txtLicenseClass.Size = new System.Drawing.Size( 320, 23 );
+            this.txtLicenseClass.TabIndex = 25;
+            // 
+            // txtLocalAppID
+            // 
+            this.txtLocalAppID.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtLocalAppID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLocalAppID.ForeColor = System.Drawing.Color.White;
+            this.txtLocalAppID.Location = new System.Drawing.Point( 28, 288 );
+            this.txtLocalAppID.Name = "txtLocalAppID";
+            this.txtLocalAppID.Size = new System.Drawing.Size( 320, 23 );
+            this.txtLocalAppID.TabIndex = 24;
             // 
             // dtpAppDate
             // 
@@ -205,64 +255,6 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // lblLocalLicenseAppFees
-            // 
-            this.lblLocalLicenseAppFees.AutoSize = true;
-            this.lblLocalLicenseAppFees.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblLocalLicenseAppFees.ForeColor = System.Drawing.Color.White;
-            this.lblLocalLicenseAppFees.Location = new System.Drawing.Point( 319, 546 );
-            this.lblLocalLicenseAppFees.Name = "lblLocalLicenseAppFees";
-            this.lblLocalLicenseAppFees.Size = new System.Drawing.Size( 33, 20 );
-            this.lblLocalLicenseAppFees.TabIndex = 16;
-            this.lblLocalLicenseAppFees.Text = "؟؟؟";
-            // 
-            // lblTrials
-            // 
-            this.lblTrials.AutoSize = true;
-            this.lblTrials.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblTrials.ForeColor = System.Drawing.Color.White;
-            this.lblTrials.Location = new System.Drawing.Point( 319, 444 );
-            this.lblTrials.Name = "lblTrials";
-            this.lblTrials.Size = new System.Drawing.Size( 33, 20 );
-            this.lblTrials.TabIndex = 14;
-            this.lblTrials.Text = "؟؟؟";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point( 319, 393 );
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size( 33, 20 );
-            this.lblName.TabIndex = 13;
-            this.lblName.Text = "؟؟؟";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblLicenseClass
-            // 
-            this.lblLicenseClass.AutoSize = true;
-            this.lblLicenseClass.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblLicenseClass.ForeColor = System.Drawing.Color.White;
-            this.lblLicenseClass.Location = new System.Drawing.Point( 319, 342 );
-            this.lblLicenseClass.Name = "lblLicenseClass";
-            this.lblLicenseClass.Size = new System.Drawing.Size( 33, 20 );
-            this.lblLicenseClass.TabIndex = 12;
-            this.lblLicenseClass.Text = "؟؟؟";
-            this.lblLicenseClass.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblLocalLicenseAppID
-            // 
-            this.lblLocalLicenseAppID.AutoSize = true;
-            this.lblLocalLicenseAppID.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblLocalLicenseAppID.ForeColor = System.Drawing.Color.White;
-            this.lblLocalLicenseAppID.Location = new System.Drawing.Point( 319, 291 );
-            this.lblLocalLicenseAppID.Name = "lblLocalLicenseAppID";
-            this.lblLocalLicenseAppID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblLocalLicenseAppID.Size = new System.Drawing.Size( 33, 20 );
-            this.lblLocalLicenseAppID.TabIndex = 11;
-            this.lblLocalLicenseAppID.Text = "???";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -331,12 +323,12 @@
             // 
             // gbRetakeTest
             // 
+            this.gbRetakeTest.Controls.Add( this.txtTottalFees );
+            this.gbRetakeTest.Controls.Add( this.txtRetakeTestFees );
+            this.gbRetakeTest.Controls.Add( this.txtRetakeTestID );
             this.gbRetakeTest.Controls.Add( this.pictureBox10 );
             this.gbRetakeTest.Controls.Add( this.pictureBox9 );
             this.gbRetakeTest.Controls.Add( this.pictureBox8 );
-            this.gbRetakeTest.Controls.Add( this.lblRetakeTestAppID );
-            this.gbRetakeTest.Controls.Add( this.lblTotallFees );
-            this.gbRetakeTest.Controls.Add( this.lblRetakeTestFees );
             this.gbRetakeTest.Controls.Add( this.label11 );
             this.gbRetakeTest.Controls.Add( this.label10 );
             this.gbRetakeTest.Controls.Add( this.label9 );
@@ -348,6 +340,36 @@
             this.gbRetakeTest.TabIndex = 1;
             this.gbRetakeTest.TabStop = false;
             this.gbRetakeTest.Text = "معلومات إعادة الإختبار";
+            // 
+            // txtTottalFees
+            // 
+            this.txtTottalFees.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtTottalFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTottalFees.ForeColor = System.Drawing.Color.White;
+            this.txtTottalFees.Location = new System.Drawing.Point( 28, 144 );
+            this.txtTottalFees.Name = "txtTottalFees";
+            this.txtTottalFees.Size = new System.Drawing.Size( 320, 23 );
+            this.txtTottalFees.TabIndex = 31;
+            // 
+            // txtRetakeTestFees
+            // 
+            this.txtRetakeTestFees.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtRetakeTestFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRetakeTestFees.ForeColor = System.Drawing.Color.White;
+            this.txtRetakeTestFees.Location = new System.Drawing.Point( 28, 92 );
+            this.txtRetakeTestFees.Name = "txtRetakeTestFees";
+            this.txtRetakeTestFees.Size = new System.Drawing.Size( 320, 23 );
+            this.txtRetakeTestFees.TabIndex = 30;
+            // 
+            // txtRetakeTestID
+            // 
+            this.txtRetakeTestID.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ), ( ( int ) ( ( ( byte ) ( 34 ) ) ) ) );
+            this.txtRetakeTestID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRetakeTestID.ForeColor = System.Drawing.Color.White;
+            this.txtRetakeTestID.Location = new System.Drawing.Point( 28, 40 );
+            this.txtRetakeTestID.Name = "txtRetakeTestID";
+            this.txtRetakeTestID.Size = new System.Drawing.Size( 320, 23 );
+            this.txtRetakeTestID.TabIndex = 29;
             // 
             // pictureBox10
             // 
@@ -378,39 +400,6 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 23;
             this.pictureBox8.TabStop = false;
-            // 
-            // lblRetakeTestAppID
-            // 
-            this.lblRetakeTestAppID.AutoSize = true;
-            this.lblRetakeTestAppID.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblRetakeTestAppID.ForeColor = System.Drawing.Color.White;
-            this.lblRetakeTestAppID.Location = new System.Drawing.Point( 319, 43 );
-            this.lblRetakeTestAppID.Name = "lblRetakeTestAppID";
-            this.lblRetakeTestAppID.Size = new System.Drawing.Size( 33, 20 );
-            this.lblRetakeTestAppID.TabIndex = 17;
-            this.lblRetakeTestAppID.Text = "؟؟؟";
-            // 
-            // lblTotallFees
-            // 
-            this.lblTotallFees.AutoSize = true;
-            this.lblTotallFees.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblTotallFees.ForeColor = System.Drawing.Color.White;
-            this.lblTotallFees.Location = new System.Drawing.Point( 319, 147 );
-            this.lblTotallFees.Name = "lblTotallFees";
-            this.lblTotallFees.Size = new System.Drawing.Size( 33, 20 );
-            this.lblTotallFees.TabIndex = 18;
-            this.lblTotallFees.Text = "؟؟؟";
-            // 
-            // lblRetakeTestFees
-            // 
-            this.lblRetakeTestFees.AutoSize = true;
-            this.lblRetakeTestFees.Font = new System.Drawing.Font( "Rubik", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblRetakeTestFees.ForeColor = System.Drawing.Color.White;
-            this.lblRetakeTestFees.Location = new System.Drawing.Point( 319, 95 );
-            this.lblRetakeTestFees.Name = "lblRetakeTestFees";
-            this.lblRetakeTestFees.Size = new System.Drawing.Size( 33, 20 );
-            this.lblRetakeTestFees.TabIndex = 17;
-            this.lblRetakeTestFees.Text = "؟؟؟";
             // 
             // label11
             // 
@@ -508,14 +497,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblLocalLicenseAppFees;
-        private System.Windows.Forms.Label lblTrials;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblLicenseClass;
-        private System.Windows.Forms.Label lblLocalLicenseAppID;
-        private System.Windows.Forms.Label lblRetakeTestAppID;
-        private System.Windows.Forms.Label lblTotallFees;
-        private System.Windows.Forms.Label lblRetakeTestFees;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -525,5 +506,13 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.DateTimePicker dtpAppDate;
+        private System.Windows.Forms.TextBox txtLocalAppID;
+        private System.Windows.Forms.TextBox txtFees;
+        private System.Windows.Forms.TextBox txtTrials;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtLicenseClass;
+        private System.Windows.Forms.TextBox txtTottalFees;
+        private System.Windows.Forms.TextBox txtRetakeTestFees;
+        private System.Windows.Forms.TextBox txtRetakeTestID;
     }
 }

@@ -35,6 +35,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.رخصةمحليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.رخصةدوليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +47,9 @@
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالرخصالمحليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.إدارةالرخصالدوليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -61,10 +65,6 @@
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.تسجيلالخرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.إدارةالرخصالمحليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.إدارةالرخصالدوليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -158,9 +158,14 @@
             this.رخصةمحليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.Local_32;
             this.رخصةمحليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةمحليةToolStripMenuItem.Name = "رخصةمحليةToolStripMenuItem";
-            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
             this.رخصةمحليةToolStripMenuItem.Text = "رخصة محلية";
             this.رخصةمحليةToolStripMenuItem.Click += new System.EventHandler(this.رخصةمحليةToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(181, 6);
             // 
             // رخصةدوليةToolStripMenuItem
             // 
@@ -169,7 +174,7 @@
             this.رخصةدوليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.International_32;
             this.رخصةدوليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةدوليةToolStripMenuItem.Name = "رخصةدوليةToolStripMenuItem";
-            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
             this.رخصةدوليةToolStripMenuItem.Text = "رخصة دولية";
             // 
             // toolStripSeparator5
@@ -186,6 +191,7 @@
             this.toolStripMenuItem7.RightToLeftAutoMirrorImage = true;
             this.toolStripMenuItem7.Size = new System.Drawing.Size(324, 38);
             this.toolStripMenuItem7.Text = "تجديد رخصة قيادة";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripSeparator6
             // 
@@ -251,6 +257,24 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(332, 38);
             this.toolStripMenuItem2.Text = "إدارة الطلبات";
+            // 
+            // إدارةالرخصالمحليةToolStripMenuItem
+            // 
+            this.إدارةالرخصالمحليةToolStripMenuItem.Name = "إدارةالرخصالمحليةToolStripMenuItem";
+            this.إدارةالرخصالمحليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
+            this.إدارةالرخصالمحليةToolStripMenuItem.Text = "إدارة الرخص المحليٌة";
+            this.إدارةالرخصالمحليةToolStripMenuItem.Click += new System.EventHandler(this.إدارةالرخصالمحليةToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(250, 6);
+            // 
+            // إدارةالرخصالدوليةToolStripMenuItem
+            // 
+            this.إدارةالرخصالدوليةToolStripMenuItem.Name = "إدارةالرخصالدوليةToolStripMenuItem";
+            this.إدارةالرخصالدوليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
+            this.إدارةالرخصالدوليةToolStripMenuItem.Text = "إدارة الرخص الدوليٌة";
             // 
             // toolStripSeparator2
             // 
@@ -331,6 +355,7 @@
             this.السائقونToolStripMenuItem.Name = "السائقونToolStripMenuItem";
             this.السائقونToolStripMenuItem.Size = new System.Drawing.Size(195, 68);
             this.السائقونToolStripMenuItem.Text = "السائقون";
+            this.السائقونToolStripMenuItem.Click += new System.EventHandler(this.السائقونToolStripMenuItem_Click);
             // 
             // معلوماتالمستخدمالحاليToolStripMenuItem
             // 
@@ -393,29 +418,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1378, 704);
             this.panel2.TabIndex = 1;
-            // 
-            // إدارةالرخصالمحليةToolStripMenuItem
-            // 
-            this.إدارةالرخصالمحليةToolStripMenuItem.Name = "إدارةالرخصالمحليةToolStripMenuItem";
-            this.إدارةالرخصالمحليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
-            this.إدارةالرخصالمحليةToolStripMenuItem.Text = "إدارة الرخص المحليٌة";
-            this.إدارةالرخصالمحليةToolStripMenuItem.Click += new System.EventHandler(this.إدارةالرخصالمحليةToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(250, 6);
-            // 
-            // إدارةالرخصالدوليةToolStripMenuItem
-            // 
-            this.إدارةالرخصالدوليةToolStripMenuItem.Name = "إدارةالرخصالدوليةToolStripMenuItem";
-            this.إدارةالرخصالدوليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
-            this.إدارةالرخصالدوليةToolStripMenuItem.Text = "إدارة الرخص الدوليٌة";
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(193, 6);
             // 
             // frmMain
             // 

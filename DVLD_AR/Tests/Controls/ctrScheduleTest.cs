@@ -36,20 +36,20 @@ namespace DVLD_AR.Tests.Controls
 
                     case clsTestType.enTestType.VisionTest:
                         {
-                            gbTestType.Text = "Vision Test";
+                            gbTestType.Text = " إختبار النظر ";
                             pbxTestType.Image = Resources.Vision_512;
                             break;
                         }
 
                     case clsTestType.enTestType.WrittenTest:
                         {
-                            gbTestType.Text = "Written Test";
+                            gbTestType.Text = " الإختبار الكتابي ";
                             pbxTestType.Image = Resources.Written_Test_512;
                             break;
                         }
                     case clsTestType.enTestType.StreetTest:
                         {
-                            gbTestType.Text = "Street Test";
+                            gbTestType.Text = " الإختبار الميداني ";
                             pbxTestType.Image = Resources.driving_test_512;
                             break;
                         }
@@ -95,32 +95,32 @@ namespace DVLD_AR.Tests.Controls
 
             if ( _CreationMode == enCreationMode.RetakeTestSchedule )
             {
-                lblRetakeTestFees.Text = clsApplicationType.Find( ( int ) clsApplication.enApplicationType.RetakeTest ).Fees.ToString();
+                txtRetakeTestFees.Text = clsApplicationType.Find( ( int ) clsApplication.enApplicationType.RetakeTest ).Fees.ToString();
                 gbRetakeTest.Enabled = true;
                 lblTitle.Text = "جدولة إعادة إختبار";
-                lblRetakeTestAppID.Text = "0";
+                txtRetakeTestID.Text = "0";
             }
             else
             {
                 gbRetakeTest.Enabled = false;
                 lblTitle.Text = "جدولة إختبار";
-                lblRetakeTestFees.Text = "0";
-                lblRetakeTestAppID.Text = "N/A";
+                txtRetakeTestFees.Text = "0";
+                txtRetakeTestID.Text = "لايوجد";
             }
 
-            lblLocalLicenseAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
-            lblLicenseClass.Text = _LocalDrivingLicenseApplication.LicenseClassInfo.ClassName;
-            lblName.Text = _LocalDrivingLicenseApplication.PersonFullName;
+            txtLocalAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
+            txtLicenseClass.Text = _LocalDrivingLicenseApplication.LicenseClassInfo.ClassName;
+            txtName.Text = _LocalDrivingLicenseApplication.PersonFullName;
 
             //this will show the trials for this test before  
-            lblTrials.Text = _LocalDrivingLicenseApplication.TotalTrialsPerTest( _TestTypeID ).ToString();
+            txtTrials.Text = _LocalDrivingLicenseApplication.TotalTrialsPerTest( _TestTypeID ).ToString();
 
 
             if ( _Mode == enMode.AddNew )
             {
-                lblLocalLicenseAppFees.Text = clsTestType.Find( _TestTypeID ).Fees.ToString();
+                txtFees.Text = clsTestType.Find( _TestTypeID ).Fees.ToString();
                 dtpAppDate.MinDate = DateTime.Now;
-                lblRetakeTestAppID.Text = "N/A";
+                txtRetakeTestID.Text = "لايوجد";
 
                 _TestAppointment = new clsTestAppointment();
             }
@@ -133,7 +133,7 @@ namespace DVLD_AR.Tests.Controls
             }
 
 
-            lblTotallFees.Text = ( Convert.ToSingle( lblLocalLicenseAppFees.Text ) + Convert.ToSingle( lblRetakeTestFees.Text ) ).ToString();
+            txtTottalFees.Text = ( Convert.ToSingle( txtFees.Text ) + Convert.ToSingle( txtRetakeTestFees.Text ) ).ToString();
 
 
             if ( !_HandleActiveTestAppointmentConstraint() )
@@ -156,7 +156,7 @@ namespace DVLD_AR.Tests.Controls
                 return false;
             }
 
-            lblLocalLicenseAppFees.Text = _TestAppointment.PaidFees.ToString();
+            txtFees.Text = _TestAppointment.PaidFees.ToString();
 
             //we compare the current date with the appointment date to set the min date.
             if ( DateTime.Compare( DateTime.Now, _TestAppointment.AppointmentDate ) < 0 )
@@ -168,15 +168,15 @@ namespace DVLD_AR.Tests.Controls
 
             if ( _TestAppointment.RetakeTestApplicationID == -1 )
             {
-                lblRetakeTestFees.Text = "0";
-                lblRetakeTestAppID.Text = "N/A";
+                txtRetakeTestFees.Text = "0";
+                txtRetakeTestID.Text = "لايوجد";
             }
             else
             {
-                lblRetakeTestFees.Text = _TestAppointment.RetakeTestAppInfo.PaidFees.ToString();
+                txtRetakeTestFees.Text = _TestAppointment.RetakeTestAppInfo.PaidFees.ToString();
                 gbRetakeTest.Enabled = true;
                 lblTitle.Text = "جدولة إعادة إختبار";
-                lblRetakeTestAppID.Text = _TestAppointment.RetakeTestApplicationID.ToString();
+                txtRetakeTestID.Text = _TestAppointment.RetakeTestApplicationID.ToString();
 
             }
             return true;
@@ -185,7 +185,7 @@ namespace DVLD_AR.Tests.Controls
         {
             if ( _Mode == enMode.AddNew && clsLocalDrivingLicenseApplication.IsThereAnActiveScheduledTest( _LocalDrivingLicenseApplicationID, _TestTypeID ) )
             {
-                lblUserMessage.Text = "هذا الشخص لديه موعد غير مغلق لهذا الإختبا";
+                lblUserMessage.Text = "هذا الشخص لديه موعد مسبق نشط لهذا الإختبار";
                 btnSave.Enabled = false;
                 dtpAppDate.Enabled = false;
                 return false;
@@ -313,7 +313,7 @@ namespace DVLD_AR.Tests.Controls
             _TestAppointment.TestTypeID = _TestTypeID;
             _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
             _TestAppointment.AppointmentDate = dtpAppDate.Value;
-            _TestAppointment.PaidFees = Convert.ToSingle( lblLocalLicenseAppFees.Text );
+            _TestAppointment.PaidFees = Convert.ToSingle( txtFees.Text );
             _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.UserID;
 
             if ( _TestAppointment.Save() )

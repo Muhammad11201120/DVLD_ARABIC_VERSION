@@ -34,3 +34,12 @@ D:\Programing\c#\DVLD_AR\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.CoreCompil
 D:\Programing\c#\DVLD_AR\DVLD_Buisness\obj\Debug\DVLD_Bui.E5CEC4E3.Up2Date
 D:\Programing\c#\DVLD_AR\DVLD_Buisness\obj\Debug\DVLD_Buisness.dll
 D:\Programing\c#\DVLD_AR\DVLD_Buisness\obj\Debug\DVLD_Buisness.pdb
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\bin\Debug\DVLD_Buisness.dll
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\bin\Debug\DVLD_Buisness.pdb
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\bin\Debug\DVLD_DataAccess.dll
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\bin\Debug\DVLD_DataAccess.pdb
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.AssemblyReference.cache
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.CoreCompileInputs.cache
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\obj\Debug\DVLD_Bui.E5CEC4E3.Up2Date
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\obj\Debug\DVLD_Buisness.dll
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_Buisness\obj\Debug\DVLD_Buisness.pdb

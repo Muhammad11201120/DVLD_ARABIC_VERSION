@@ -22,3 +22,9 @@ D:\Programing\c#\DVLD_AR\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.Assemb
 D:\Programing\c#\DVLD_AR\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
 D:\Programing\c#\DVLD_AR\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
 D:\Programing\c#\DVLD_AR\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.dll
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.pdb
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyReference.cache
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
+D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb

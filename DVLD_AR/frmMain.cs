@@ -1,5 +1,6 @@
 ﻿using DVLD_AR.Applications.LocalDrivingLicenseApplications;
 using DVLD_AR.Applications.Manage_Application_Types;
+using DVLD_AR.Applications.ReleaseDetainedLicense;
 using DVLD_AR.Applications.Renew_Local_License;
 using DVLD_AR.Drivers;
 using DVLD_AR.GeneralClasses;
@@ -100,6 +101,24 @@ namespace DVLD_AR
         private void السائقونToolStripMenuItem_Click( object sender, EventArgs e )
         {
             frmListAllDrivers frm = new frmListAllDrivers();
+            frm.ShowDialog();
+        }
+
+        private void فكحجزرخصةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            DVLD_AR.Licenses.DetainLicense.frmDetainLicenseApplication frm = new Licenses.DetainLicense.frmDetainLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void فكحجزرخصةToolStripMenuItem1_Click( object sender, EventArgs e )
+        {
+            frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
+            frm.ShowDialog();
+        }
+
+        private void إدارةالرخصالمحجوزةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmListAllDetainedLicenses frm = new frmListAllDetainedLicenses();
             frm.ShowDialog();
         }
     }

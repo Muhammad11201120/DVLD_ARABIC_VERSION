@@ -199,6 +199,7 @@ namespace DVLD_DataAccess
             catch ( Exception ex )
             {
                 // Console.WriteLine("Error: " + ex.Message);
+                throw new Exception( ex.Message );
             }
             finally
             {
@@ -256,7 +257,7 @@ namespace DVLD_DataAccess
             catch ( Exception ex )
             {
                 //Console.WriteLine("Error: " + ex.Message);
-
+                //throw new Exception(ex.Message);
             }
 
             finally

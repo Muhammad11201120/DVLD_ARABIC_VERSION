@@ -52,6 +52,11 @@
             this.إدارةالرخصالدوليةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالرخصالمحجوزةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.فكحجزرخصةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.فكحجزرخصةToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -283,6 +288,12 @@
             // 
             // toolStripMenuItem3
             // 
+            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.إدارةالرخصالمحجوزةToolStripMenuItem,
+            this.toolStripSeparator12,
+            this.فكحجزرخصةToolStripMenuItem,
+            this.toolStripSeparator13,
+            this.فكحجزرخصةToolStripMenuItem1});
             this.toolStripMenuItem3.Font = new System.Drawing.Font("Rubik", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.toolStripMenuItem3.Image = global::DVLD_AR.Properties.Resources.Detain_32;
@@ -290,6 +301,43 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(332, 38);
             this.toolStripMenuItem3.Text = "إدارة حجز وفك حجز الرخص";
+            // 
+            // إدارةالرخصالمحجوزةToolStripMenuItem
+            // 
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.Detain_32;
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.Name = "إدارةالرخصالمحجوزةToolStripMenuItem";
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.Text = "إدارة الرخص المحجوزة";
+            this.إدارةالرخصالمحجوزةToolStripMenuItem.Click += new System.EventHandler(this.إدارةالرخصالمحجوزةToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(285, 6);
+            // 
+            // فكحجزرخصةToolStripMenuItem
+            // 
+            this.فكحجزرخصةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.Detain_32;
+            this.فكحجزرخصةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.فكحجزرخصةToolStripMenuItem.Name = "فكحجزرخصةToolStripMenuItem";
+            this.فكحجزرخصةToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.فكحجزرخصةToolStripMenuItem.Text = "حجز رخصة";
+            this.فكحجزرخصةToolStripMenuItem.Click += new System.EventHandler(this.فكحجزرخصةToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(285, 6);
+            // 
+            // فكحجزرخصةToolStripMenuItem1
+            // 
+            this.فكحجزرخصةToolStripMenuItem1.Image = global::DVLD_AR.Properties.Resources.Retake_Test_32;
+            this.فكحجزرخصةToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.فكحجزرخصةToolStripMenuItem1.Name = "فكحجزرخصةToolStripMenuItem1";
+            this.فكحجزرخصةToolStripMenuItem1.Size = new System.Drawing.Size(288, 38);
+            this.فكحجزرخصةToolStripMenuItem1.Text = "فك حجز رخصة";
+            this.فكحجزرخصةToolStripMenuItem1.Click += new System.EventHandler(this.فكحجزرخصةToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
@@ -483,6 +531,11 @@
         private System.Windows.Forms.ToolStripMenuItem إدارةالرخصالمحليةToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ToolStripMenuItem إدارةالرخصالدوليةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالرخصالمحجوزةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripMenuItem فكحجزرخصةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
+        private System.Windows.Forms.ToolStripMenuItem فكحجزرخصةToolStripMenuItem1;
     }
 }
 

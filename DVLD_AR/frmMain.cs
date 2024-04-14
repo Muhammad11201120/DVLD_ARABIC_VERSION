@@ -1,4 +1,5 @@
-﻿using DVLD_AR.Applications.LocalDrivingLicenseApplications;
+﻿using DVLD_AR.Applications.International_License;
+using DVLD_AR.Applications.LocalDrivingLicenseApplications;
 using DVLD_AR.Applications.Manage_Application_Types;
 using DVLD_AR.Applications.ReleaseDetainedLicense;
 using DVLD_AR.Applications.Renew_Local_License;
@@ -119,6 +120,19 @@ namespace DVLD_AR
         private void إدارةالرخصالمحجوزةToolStripMenuItem_Click( object sender, EventArgs e )
         {
             frmListAllDetainedLicenses frm = new frmListAllDetainedLicenses();
+            frm.ShowDialog();
+        }
+
+        private void إدارةالرخصالدوليةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmListAllInterNationalLicenses frm = new frmListAllInterNationalLicenses();
+            frm.ShowDialog();
+        }
+
+        private void رخصةدوليةToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmNewInterNationalLicenseApplication frm = new frmNewInterNationalLicenseApplication();
+
             frm.ShowDialog();
         }
     }

@@ -101,3 +101,10 @@ D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_AR\obj\Debug\DVLD_AR.pdb
 D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_AR\obj\Debug\DVLD_AR.Licenses.DetainLicense.frmDetainLicenseApplication.resources
 D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_AR\obj\Debug\DVLD_AR.Applications.ReleaseDetainedLicense.frmReleaseDetainedLicense.resources
 D:\PROGRAMMING\C#\DVLD_ARABIC_VERSION\DVLD_AR\obj\Debug\DVLD_AR.Applications.ReleaseDetainedLicense.frmListAllDetainedLicenses.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.ReleaseDetainedLicense.frmListAllDetainedLicenses.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.ReleaseDetainedLicense.frmReleaseDetainedLicense.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.DetainLicense.frmDetainLicenseApplication.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.International_License.frmNewInterNationalLicenseApplication.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.International_License.Controls.ctrInterNationalLicenseInfo.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Licenses.International_License.frmInternationalLicenseInfo.resources
+D:\Programing\c#\DVLD_AR\DVLD_AR\obj\Debug\DVLD_AR.Applications.International_License.frmListAllInterNationalLicenses.resources

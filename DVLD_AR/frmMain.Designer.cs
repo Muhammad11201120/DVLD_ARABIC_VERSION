@@ -163,14 +163,14 @@
             this.رخصةمحليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.Local_32;
             this.رخصةمحليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةمحليةToolStripMenuItem.Name = "رخصةمحليةToolStripMenuItem";
-            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
+            this.رخصةمحليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.رخصةمحليةToolStripMenuItem.Text = "رخصة محلية";
             this.رخصةمحليةToolStripMenuItem.Click += new System.EventHandler(this.رخصةمحليةToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(193, 6);
             // 
             // رخصةدوليةToolStripMenuItem
             // 
@@ -179,8 +179,9 @@
             this.رخصةدوليةToolStripMenuItem.Image = global::DVLD_AR.Properties.Resources.International_32;
             this.رخصةدوليةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.رخصةدوليةToolStripMenuItem.Name = "رخصةدوليةToolStripMenuItem";
-            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(184, 38);
+            this.رخصةدوليةToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.رخصةدوليةToolStripMenuItem.Text = "رخصة دولية";
+            this.رخصةدوليةToolStripMenuItem.Click += new System.EventHandler(this.رخصةدوليةToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
@@ -280,6 +281,7 @@
             this.إدارةالرخصالدوليةToolStripMenuItem.Name = "إدارةالرخصالدوليةToolStripMenuItem";
             this.إدارةالرخصالدوليةToolStripMenuItem.Size = new System.Drawing.Size(253, 34);
             this.إدارةالرخصالدوليةToolStripMenuItem.Text = "إدارة الرخص الدوليٌة";
+            this.إدارةالرخصالدوليةToolStripMenuItem.Click += new System.EventHandler(this.إدارةالرخصالدوليةToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 

@@ -52,6 +52,18 @@
     <Compile Include="Applications\Controls\ctrApplicationBiscInfo.Designer.cs">
       <DependentUpon>ctrApplicationBiscInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\International License\frmListAllInterNationalLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International License\frmListAllInterNationalLicenses.Designer.cs">
+      <DependentUpon>frmListAllInterNationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International License\frmNewInterNationalLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International License\frmNewInterNationalLicenseApplication.Designer.cs">
+      <DependentUpon>frmNewInterNationalLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\LocalDrivingLicenseApplications\ctrDrivingLicenseApplicationInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +157,18 @@
     </Compile>
     <Compile Include="Licenses\frmShowPersonLicenseHistory.Designer.cs">
       <DependentUpon>frmShowPersonLicenseHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\International License\Controls\ctrInterNationalLicenseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\International License\Controls\ctrInterNationalLicenseInfo.Designer.cs">
+      <DependentUpon>ctrInterNationalLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\International License\frmInternationalLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\International License\frmInternationalLicenseInfo.Designer.cs">
+      <DependentUpon>frmInternationalLicenseInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Licenses\Local License\Controls\ctrDriverLicenseInfo.cs">
       <SubType>UserControl</SubType>
@@ -294,6 +318,12 @@
     <EmbeddedResource Include="Applications\Controls\ctrApplicationBiscInfo.resx">
       <DependentUpon>ctrApplicationBiscInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International License\frmListAllInterNationalLicenses.resx">
+      <DependentUpon>frmListAllInterNationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International License\frmNewInterNationalLicenseApplication.resx">
+      <DependentUpon>frmNewInterNationalLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\ctrDrivingLicenseApplicationInfo.resx">
       <DependentUpon>ctrDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,6 +368,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\frmShowPersonLicenseHistory.resx">
       <DependentUpon>frmShowPersonLicenseHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\International License\Controls\ctrInterNationalLicenseInfo.resx">
+      <DependentUpon>ctrInterNationalLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\International License\frmInternationalLicenseInfo.resx">
+      <DependentUpon>frmInternationalLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Local License\Controls\ctrDriverLicenseInfo.resx">
       <DependentUpon>ctrDriverLicenseInfo.cs</DependentUpon>
@@ -642,10 +678,7 @@
   <ItemGroup>
     <None Include="Resources\Test 321.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Applications\International License\" />
-    <Folder Include="Licenses\International License\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Notes 321.png" />
   </ItemGroup>
@@ -666,6 +699,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PersonLicenseHistory 5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 5121.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
